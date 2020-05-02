@@ -8,6 +8,7 @@ t0 = 0;              %starting time
 tmax = 2;            %ending time
 x0 = 1;              %initial function value
 f = @(t, x) t-x;       %derivative function
+exact = @(t) t-1+2*exp(-t); %exact solution for the differential equation
 
 % (a) Euler's
 method = 'Euler''s ';
